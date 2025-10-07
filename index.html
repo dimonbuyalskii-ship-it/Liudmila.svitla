@@ -2,149 +2,194 @@
 <html lang="uk">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Оксана — TikTok співає українські пісні</title>
-  <meta name="description" content="Оксана — співаю у TikTok, ліпсинг на улюблені українські пісні. Підтримайте донатом ❤️" />
-  <meta property="og:title" content="Оксана — TikTok співає українські пісні" />
-  <meta property="og:description" content="Подобається контент? Підтримайте донатом — дякую!" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ЛюдМила СВІТЛА — Офіційна сторінка</title>
+  <meta name="description" content="ЛюдМила СВІТЛА — українські пісні з душею. Офіційна сторінка: відео, підтримка, контакти." />
+  <meta property="og:title" content="ЛюдМила СВІТЛА — Офіційна сторінка" />
+  <meta property="og:description" content="Українські пісні, що гріють серце. Підтримати творчість — тут." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://source.unsplash.com/featured/?ukrainian,woman,portrait" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80&w=1600&auto=format&fit=crop" />
   <meta property="og:url" content="https://example.com" />
-  <link rel="icon" href="https://source.unsplash.com/featured/32x32/?music" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="https://fav.farm/🎵" />
   <style>
     :root{
-      --bg:#0b0f18;
-      --card:#101828;
-      --muted:#98a2b3;
-      --text:#f2f4f7;
-      --accent:#22c55e;
-      --accent2:#3b82f6;
-      --radius:16px;
-      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      --bg:#0b0b10;
+      --panel:#101217;
+      --muted:#a6adbb;
+      --text:#eef2f7;
+      --gold:#f6d24c;
+      --accent:#df2a43; /* deep red */
+      --link:#7cc6ff;
+      --ring:rgba(241,196,15,.45);
+      --radius:18px;
+      --shadow:0 20px 60px rgba(0,0,0,.45);
     }
     *{box-sizing:border-box}
-    body{margin:0;background:linear-gradient(180deg,#0b0f18,#111827);color:var(--text)}
-    .wrap{max-width:860px;margin:24px auto;padding:20px}
-    .card{background:rgba(255,255,255,0.04);backdrop-filter:saturate(180%) blur(8px);border:1px solid rgba(255,255,255,0.08);
-      border-radius:var(--radius);padding:18px;box-shadow:0 10px 30px rgba(0,0,0,0.35)}
-    header{display:flex;gap:16px;align-items:center}
-    .avatar{width:108px;height:108px;border-radius:14px;object-fit:cover;border:2px solid rgba(255,255,255,0.15)}
-    h1{margin:0 0 6px 0;font-size:26px;letter-spacing:.2px}
-    p.lead{margin:0;color:var(--muted)}
-    .buttons{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap}
-    .btn{display:inline-flex;align-items:center;gap:8px;padding:12px 16px;border-radius:12px;text-decoration:none;font-weight:700;
-      border:1px solid rgba(255,255,255,0.10);transition:transform .05s ease, background .2s ease;white-space:nowrap}
-    .btn:hover{transform:translateY(-1px)}
-    .btn-primary{background:var(--accent);border-color:transparent;color:#0b0f18}
-    .btn-blue{background:var(--accent2);border-color:transparent;color:#fff}
-    .btn-outline{background:transparent;color:var(--text)}
-    .grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:16px}
-    .panel{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:14px;padding:14px}
-    .videos{display:grid;grid-template-columns:1fr;gap:12px}
-    .vid{display:flex;gap:12px;align-items:center}
-    .thumb{width:128px;height:72px;border-radius:10px;object-fit:cover;background:#222}
-    .vid a{color:#fff;text-decoration:none;font-weight:700}
-    .muted{color:var(--muted);font-size:13px}
-    footer{margin-top:18px;text-align:center;color:var(--muted);font-size:13px}
-    .kudos{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
-    .kudo{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:10px}
-    code.copy{user-select:all;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);padding:6px 8px;border-radius:8px;display:inline-block}
-    @media(min-width:720px){
-      .grid{grid-template-columns:1.2fr .8fr}
-      .videos{grid-template-columns:1fr 1fr}
+    html,body{margin:0;height:100%}
+    body{
+      color:var(--text);
+      background:
+        radial-gradient(1200px 600px at 90% -10%, rgba(223,42,67,.25), transparent 60%),
+        radial-gradient(900px 400px at -10% 10%, rgba(124,198,255,.15), transparent 60%),
+        linear-gradient(180deg,#0a0a0f 0%, #0f1117 100%);
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
     }
+    a{color:var(--link)}
+    .wrap{max-width:1100px;margin:0 auto;padding:28px 18px 42px}
+    .nav{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+    .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--text)}
+    .brand .logo{width:42px;height:42px;border-radius:50%;background:linear-gradient(145deg,var(--accent),#8a1b2c);display:grid;place-items:center;box-shadow:0 8px 28px rgba(223,42,67,.35)}
+    .brand .logo span{font-weight:800;letter-spacing:.5px}
+    .brand .name{font-weight:800;font-size:18px;letter-spacing:.3px}
+    .pill{border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.03);padding:8px 12px;border-radius:999px;font-weight:600;backdrop-filter:saturate(160%) blur(10px)}
+    .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:26px;align-items:center;padding:24px;margin-top:6px;border-radius:var(--radius)}
+    @media(max-width:860px){ .hero{grid-template-columns:1fr} }
+    .portrait{position:relative;border-radius:22px;overflow:hidden;box-shadow:var(--shadow);border:1px solid rgba(255,255,255,.08);aspect-ratio:5/6;background:#111}
+    .portrait img{width:100%;height:100%;object-fit:cover;display:block}
+    .halo{position:absolute;inset:-2px;border-radius:24px;pointer-events:none;box-shadow:0 0 0 4px rgba(255,255,255,.02),0 0 0 10px var(--ring)}
+    .title h1{margin:0 0 10px 0;font-family:"Playfair Display",serif;font-size:clamp(32px,6vw,56px);line-height:1.05;letter-spacing:.2px}
+    .title p.lead{margin:0;color:var(--muted);font-size:clamp(14px,2.5vw,18px)}
+    .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:13px 18px;border-radius:14px;text-decoration:none;font-weight:700;border:1px solid rgba(255,255,255,.06);transition:transform .06s ease,box-shadow .2s ease,background .2s ease;box-shadow:0 10px 30px rgba(0,0,0,.35);letter-spacing:.2px}
+    .btn:hover{transform:translateY(-1px)}
+    .btn-primary{background:linear-gradient(180deg,var(--accent),#a6192c);color:#fff;border-color:transparent}
+    .btn-gold{background:linear-gradient(180deg,var(--gold),#e8b923);color:#2a1e05;border-color:transparent}
+    .btn-ghost{background:rgba(255,255,255,.04);color:#fff}
+    .section{margin-top:26px}
+    .card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:18px;box-shadow:var(--shadow)}
+    .section h2{font-family:"Playfair Display",serif;font-size:clamp(22px,3.2vw,30px);margin:0 0 10px 0}
+    .donate-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    @media(max-width:640px){ .donate-grid{grid-template-columns:1fr} }
+    .don-row{display:flex;gap:10px;flex-wrap:wrap}
+    .videos{display:grid;gap:14px;grid-template-columns:repeat(4,1fr)}
+    @media(max-width:980px){ .videos{grid-template-columns:repeat(3,1fr)} }
+    @media(max-width:720px){ .videos{grid-template-columns:repeat(2,1fr)} }
+    @media(max-width:480px){ .videos{grid-template-columns:1fr} }
+    .vid{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:14px;overflow:hidden;position:relative;transition:transform .08s ease,box-shadow .2s ease}
+    .vid:hover{transform:translateY(-2px);box-shadow:0 18px 40px rgba(0,0,0,.35)}
+    .vid img{width:100%;height:180px;object-fit:cover;display:block}
+    .vid .cap{padding:10px 12px}
+    .cap a{color:#fff;text-decoration:none;font-weight:700}
+    .muted{color:var(--muted);font-size:13px}
+    .footer{margin:28px 0 6px;text-align:center;color:var(--muted);font-size:13px}
+    .tag{display:inline-flex;align-items:center;gap:6px;font-weight:600;padding:6px 10px;border-radius:999px;background:rgba(241,196,15,.12);color:#ffd966;border:1px solid rgba(241,196,15,.28)}
+    .kpis{display:flex;gap:14px;flex-wrap:wrap;margin-top:10px}
+    .kpi{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:10px 12px}
+    .sep{height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.08),transparent);margin:16px 0}
   </style>
 </head>
 <body>
   <div class="wrap">
-    <div class="card">
-      <header>
-        <img class="avatar" src="https://source.unsplash.com/featured/300x300/?ukrainian,woman,portrait" alt="Фото Оксани">
-        <div>
-          <h1>Оксана — співаю у TikTok</h1>
-          <p class="lead">Ліпсинг та наспіви під українські хіти. 20&nbsp;000 підписників, тепла спільнота і море позитиву 💛💙</p>
-          <div class="buttons">
-            <a class="btn btn-blue" href="https://www.tiktok.com/@oksana.music" target="_blank" rel="noopener">Подивитись TikTok</a>
-            <a class="btn btn-outline" href="https://t.me/oksana_music_chat" target="_blank" rel="noopener">Написати в Telegram</a>
-          </div>
-        </div>
-      </header>
-
-      <div class="grid">
-        <section class="panel">
-          <h3 style="margin:0 0 8px 0">Підтримати донатом</h3>
-          <p class="muted" style="margin-top:0">Якщо вам подобаються відео — ваша підтримка дуже мотивує 🫶</p>
-          <div class="buttons">
-            <a class="btn btn-primary" href="https://send.monobank.ua/jar/EXAMPLE" target="_blank" rel="noopener">Monobank Банка</a>
-            <a class="btn btn-primary" href="https://www.liqpay.ua/uk/checkout/card/i1234567890" target="_blank" rel="noopener">Оплата карткою (LiqPay)</a>
-            <a class="btn btn-outline" href="https://www.buymeacoffee.com/oksanamusic" target="_blank" rel="noopener">BuyMeACoffee</a>
-            <a class="btn btn-outline" href="https://www.paypal.me/oksanamusic" target="_blank" rel="noopener">PayPal.Me</a>
-          </div>
-          <div style="margin-top:10px">
-            <div class="muted">Або переказ на картку (UAH):</div>
-            <code class="copy">4141 49** **** 1234 — Оксана І.</code>
-          </div>
-          <small class="muted" style="display:block;margin-top:8px">Порада: у біо TikTok використовуйте коротке посилання (bit.ly/oksana), що веде сюди.</small>
-        </section>
-
-        <section class="panel">
-          <h3 style="margin:0 0 8px 0">Про мене</h3>
-          <p style="margin:0 0 8px 0">Привіт! Мене звати Оксана. Люблю українську музику — від народних до сучасних треків. На моєму каналі — легкий настрій, пісні, посмішки та трішки магії щодня.</p>
-          <div class="kudos">
-            <div class="kudo"><strong>20k+</strong><br><span class="muted">підписників</span></div>
-            <div class="kudo"><strong>1М+</strong><br><span class="muted">переглядів</span></div>
-          </div>
-        </section>
-      </div>
-
-      <section class="panel" style="margin-top:14px">
-        <h3 style="margin:0 0 8px 0">Популярні відео</h3>
-        <div class="videos">
-          <div class="vid">
-            <img class="thumb" src="https://source.unsplash.com/featured/320x180/?music,ukraine" alt="відео 1">
-            <div>
-              <a href="https://www.tiktok.com/@oksana.music/video/1234567890" target="_blank" rel="noopener">«Черемшина» — ліпсинг</a>
-              <div class="muted">Переглядів: 120k</div>
-            </div>
-          </div>
-          <div class="vid">
-            <img class="thumb" src="https://source.unsplash.com/featured/320x180/?singing" alt="відео 2">
-            <div>
-              <a href="https://www.tiktok.com/@oksana.music/video/2345678901" target="_blank" rel="noopener">«Шум» — настрій вечора</a>
-              <div class="muted">Переглядів: 90k</div>
-            </div>
-          </div>
-          <div class="vid">
-            <img class="thumb" src="https://source.unsplash.com/featured/320x180/?microphone" alt="відео 3">
-            <div>
-              <a href="https://www.tiktok.com/@oksana.music/video/3456789012" target="_blank" rel="noopener">Український поп-мікс</a>
-              <div class="muted">Переглядів: 70k</div>
-            </div>
-          </div>
-          <div class="vid">
-            <img class="thumb" src="https://source.unsplash.com/featured/320x180/?headphones" alt="відео 4">
-            <div>
-              <a href="https://www.tiktok.com/@oksana.music/video/4567890123" target="_blank" rel="noopener">Ностальгія 2000-х</a>
-              <div class="muted">Переглядів: 65k</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <footer>
-        <div>© Оксана — офіційна сторінка. Посилання для підтримки та TikTok нижче.</div>
-      </footer>
+    <div class="nav">
+      <a class="brand" href="#top">
+        <div class="logo"><span>LS</span></div>
+        <div class="name">ЛюдМила СВІТЛА</div>
+      </a>
+      <div class="pill">Офіційна сторінка</div>
     </div>
+
+    <section class="hero card">
+      <div class="portrait">
+        <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?q=80&w=1200&auto=format&fit=crop" alt="Портрет ЛюдМили">
+        <div class="halo"></div>
+      </div>
+      <div class="title">
+        <h1>Українські пісні, що гріють серце</h1>
+        <p class="lead">Я — ЛюдМила СВІТЛА. Співаю душею: ліпсинг і наспіви на улюблені українські хіти. Якщо вам відгукується — буду вдячна за підтримку.</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="https://send.monobank.ua/jar/EXAMPLE" target="_blank" rel="noopener">Підтримати через Monobank</a>
+          <a class="btn btn-gold" href="https://www.buymeacoffee.com/oksanamusic" target="_blank" rel="noopener">BuyMeACoffee</a>
+          <a class="btn btn-ghost" href="https://t.me/oksana_music_chat" target="_blank" rel="noopener">Telegram</a>
+        </div>
+        <div class="kpis">
+          <div class="kpi"><strong>20k+</strong> підписників</div>
+          <div class="kpi"><strong>325k+</strong> вподобань</div>
+          <div class="kpi"><span class="tag">🇺🇦 Підтримай українську пісню</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="donate-grid">
+        <div class="card">
+          <h2>Підтримати творчість</h2>
+          <p class="muted">Ваша доброта допомагає мені частіше записувати пісні. Дякую кожному 💛</p>
+          <div class="don-row">
+            <a class="btn btn-primary" href="https://send.monobank.ua/jar/EXAMPLE" target="_blank" rel="noopener">Monobank Банка</a>
+            <a class="btn btn-gold" href="https://www.liqpay.ua/uk/checkout/card/i1234567890" target="_blank" rel="noopener">Оплата карткою</a>
+            <a class="btn btn-ghost" href="https://www.paypal.me/oksanamusic" target="_blank" rel="noopener">PayPal</a>
+          </div>
+          <div class="sep"></div>
+          <div class="muted">Або переказ на картку (UAH):</div>
+          <div style="margin-top:6px">
+            <code style="user-select:all;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);padding:8px 10px;border-radius:8px;display:inline-block">4141 49** **** 1234 — ЛюдМила С.</code>
+          </div>
+        </div>
+        <div class="card">
+          <h2>Про мене</h2>
+          <p style="margin:0 0 8px 0">Люблю українську музику — від народних до сучасних треків. Моя мета — передавати тепло й надію через пісню.</p>
+          <p class="muted" style="margin:0">Приєднуйтесь до спільноти в Telegram — там закулісся, голосування за пісні і теплі розмови.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section card">
+      <h2>Популярні відео</h2>
+      <div class="videos">
+        <article class="vid">
+          <a href="https://www.tiktok.com/@oksana.music/video/1234567890" target="_blank" rel="noopener">
+            <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80&w=1200&auto=format&fit=crop" alt="Відео 1">
+          </a>
+          <div class="cap">
+            <a href="https://www.tiktok.com/@oksana.music/video/1234567890" target="_blank" rel="noopener">«Черемшина» — ліпсинг</a>
+            <div class="muted">Переглядів: 210k</div>
+          </div>
+        </article>
+        <article class="vid">
+          <a href="https://www.tiktok.com/@oksana.music/video/2345678901" target="_blank" rel="noopener">
+            <img src="https://images.unsplash.com/photo-1515734674582-29010bb37906?q=80&w=1200&auto=format&fit=crop" alt="Відео 2">
+          </a>
+          <div class="cap">
+            <a href="https://www.tiktok.com/@oksana.music/video/2345678901" target="_blank" rel="noopener">«Шум» — настрій вечора</a>
+            <div class="muted">Переглядів: 180k</div>
+          </div>
+        </article>
+        <article class="vid">
+          <a href="https://www.tiktok.com/@oksana.music/video/3456789012" target="_blank" rel="noopener">
+            <img src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?q=80&w=1200&auto=format&fit=crop" alt="Відео 3">
+          </a>
+          <div class="cap">
+            <a href="https://www.tiktok.com/@oksana.music/video/3456789012" target="_blank" rel="noopener">Український поп-мікс</a>
+            <div class="muted">Переглядів: 95k</div>
+          </div>
+        </article>
+        <article class="vid">
+          <a href="https://www.tiktok.com/@oksana.music/video/4567890123" target="_blank" rel="noopener">
+            <img src="https://images.unsplash.com/photo-1435224668334-0f82ec57b605?q=80&w=1200&auto=format&fit=crop" alt="Відео 4">
+          </a>
+          <div class="cap">
+            <a href="https://www.tiktok.com/@oksana.music/video/4567890123" target="_blank" rel="noopener">Ностальгія 2000-х</a>
+            <div class="muted">Переглядів: 70k</div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <div class="footer">© ЛюдМила СВІТЛА — офіційна сторінка. Посилання для підтримки — у шапці.</div>
   </div>
 
   <script>
-    // Optional: Copy on click for card number
-    document.addEventListener('click', (e)=>{
-      if(e.target.matches('code.copy')){
-        const text = e.target.textContent.trim();
-        navigator.clipboard.writeText(text);
-        e.target.innerText = 'Скопійовано! ' + text;
-        setTimeout(()=>{ e.target.innerText = text; }, 1400);
+    document.addEventListener('click',(e)=>{
+      if(e.target.tagName==='CODE'){
+        const t=e.target.textContent.trim();
+        navigator.clipboard.writeText(t);
+        const o=e.target.textContent;
+        e.target.textContent='Скопійовано: '+t;
+        setTimeout(()=>e.target.textContent=o,1400);
       }
     });
   </script>
